@@ -1,0 +1,37 @@
+PRI.B 18L - Mini projekt 
+Raport 2. 
+
+
+1. Wstęp
+Członkowie zespołu oraz podział obowiązków:
+-Aleksandra Bedyńska – ustalenie listy funkcji potrzebnych do programu
+-Kamil Zawitaj – przygotowanie schematu blokowego
+-Konrad Łukasiuk – opracowanie systemu przepływu danych oraz ogólnego algorytmu działania
+-Robert Tykocki-Crow – napisanie sprawozdania
+Ponadto wszyscy członkowie brali udział w określeniu dokładnej funkcjonalności każdego z elementów programu. 
+2. Założenia projektowe:
+1. Projekt będzie prowadzony na serwisie GitHub w celu ułatwienia pracy zespołowej i wersjonowania kodu. Repozytorium będzie dostępne publicznie.
+2. Projekt będzie pisany w IDE Visual Studio 2017, dołączony zostanie plik make file umożliwiający kompilację pod systemem Linux.
+
+3. Schemat blokowy programu oraz opis funkcjonalności jego elementów
+
+1) Main.c
+wczytywanie i zapisywanie plików tekstowych;
+„parsowanie” danych wejściowych, np. stanu gry lub ilości pingwinów;
+wywoływanie odpowiednich funkcji w oparciu o sparsowane argumenty
+2) Placement.c
+Funkcja służąca do pierwszego etapu gry, a mianowicie rozmieszczania pionków (pingwinów) na planszy oraz zliczania punktów.
+3) Movement.c
+Funkcja służąca do drugiego etapu gry. Jej zadaniem będzie zadawanie ruchu pionków, sprawdzanie czy ruch jest dozwolony według reguł gry, „usuwanie” pól, na których stał już pionek, a także zliczanie punktów zebranych przez pionek. 
+4) Interactive.c
+Główna funkcja obsługująca interakcję z użytkownikiem.
+5) Board.c
+Funkcja odpowiedzialna za wczytywanie stanu gry z pliku, zawierająca strukturę opisującą stan planszy oraz zmienne pomocnicze. 
+6) State.c
+Funkcja zawierająca strukturę opisującą bieżący stan gry.
+7) Test.c
+Funkcja pomocnicza umożliwiająca testowanie programu. Jej zadaniem będzie losowe generowanie plansz oraz liczby pionków.
+
+
+
+RAPORT 2 
